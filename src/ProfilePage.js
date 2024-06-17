@@ -29,7 +29,7 @@ const ProfilePage = () => (<>
                   <img
                     className="w-100 h-100"
                     alt="..."
-                    src={require('assets/img/faces/daniel-cortild.jpg').default}
+                    src={require('assets/img/faces/daniel-cortild.jpeg').default}
                   />
                 </div>
                 <div className="name">
@@ -50,19 +50,9 @@ const ProfilePage = () => (<>
             >
               <p>
                 <b>
-                  Welcome to my website! As a bachelor student in mathematics, I have a passion for exploring and
-                  sharing
-                  the beauty of this field. Here you will find a collection of my publications and projects within
+                  Welcome to my website! As a master student in mathematics, I have a passion for exploring and
+                  sharing the beauty of this field. Here you will find a collection of my publications and projects within
                   mathematics, which I hope will inspire and enrich your own explorations.
-                  <br/><br/>
-                  In addition to my work in mathematics, I also have a background in web development, and you can find
-                  links
-                  to my past projects in this field on this website. If you're interested in learning more about my
-                  professional background, I invite you to check out my LinkedIn profile. If you want to dive into my
-                  coding
-                  history, my GitHub repo is the place to go. And if you're interested in my publications or projects,
-                  my
-                  ResearchGate profile has more information.
                 </b>
               </p>
               <Row className="mb-2 mt-3 py-4">

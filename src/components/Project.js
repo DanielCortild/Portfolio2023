@@ -1,67 +1,76 @@
 /*eslint-disable*/
-import React from 'react';
+import React from "react";
 
 // reactstrap components
-import {Card, CardBody, CardImg, CardTitle, Col, Container, Row,} from 'reactstrap';
+import {
+  Card,
+  CardBody,
+  CardImg,
+  CardTitle,
+  Col,
+  Container,
+  Row,
+} from "reactstrap";
 
-const jobs = [
+const preprints = [
   {
-    title: 'ILPlatform',
-    type: 'Landing Page',
-    description:
-      'ILPlatform is an innovative programming school located in Brussels, teaching children and teenagers the world of tomorrow. The website is built with React on the Firebase backend.',
-    img: 'ILPlatform_Website.png',
-    website: 'https://www.ilplatform.be',
-  },
-  {
-    title: 'SNB-Belgium',
-    type: 'E-Commerce',
-    description:
-      'SNB-Belgium is a nail product reseller in Belgium. I built their website using the Shopify backend service.',
-    img: 'SNB_Website.png',
-    website: 'https://www.snb-belgium.be',
-  },
-  {
-    title: 'EDIfly',
-    type: 'Landing Page',
-    description:
-      'EDIfly is a luxembourgish air-communication company. I built their landing page using React on the front-end and Roby on Rails on the back-end.',
-    img: 'EDIfly_Website.png',
-    website: 'http://www.edifly.com',
+    title:
+      "Krasnoselskii-Mann Iterations: Inertia, Perturbations and Approximation",
+    authors: "D. Cortild, J. Peypouquet",
+    date: "January 2024",
+    website: "https://arxiv.org/abs/2401.16870",
   },
 ];
 
 const projects = [
   {
-    title: 'A Brief Review of Automatic Differentiation',
-    authors: 'D. Cortild, J. van Haastert, A. Villegas Sanabria and F. Voronine',
-    date: 'March 2023',
-    website: 'https://www.doi.org/10.13140/RG.2.2.19959.70565',
+    title: "Well-Balanced Schemes for Shallow Water Equations",
+    authors: "D. Cortild",
+    date: "November 2023",
+    website: "http://dx.doi.org/10.13140/RG.2.2.13232.94723",
   },
   {
-    title: 'Lucas-Lehmer Primality Test',
-    authors: 'D. Cortild and A. Villegas Sanabria',
-    date: 'February 2022',
-    website: 'https://www.doi.org/10.13140/RG.2.2.20364.59520',
+    title: "Perturbed Inertial Krasnoselskii-Mann Iterations",
+    authors: "D. Cortild",
+    date: "May 2023",
+    website: "http://www.doi.org/10.13140/RG.2.2.15082.49601",
   },
   {
-    title: 'Cyclic Binary Linear Codes Of Length 2^m',
-    authors: 'D. Cortild and F. Voronine',
-    date: 'January 2022',
-    website: 'https://www.doi.org/10.13140/RG.2.2.32734.51524',
+    title: "A Brief Review of Automatic Differentiation",
+    authors:
+      "D. Cortild, J. van Haastert, A. Villegas Sanabria and F. Voronine",
+    date: "March 2023",
+    website: "https://www.doi.org/10.13140/RG.2.2.19959.70565",
+  },
+];
+
+const conference = [
+  {
+    conference:
+      "21st Conference on Advanced in Continuous Optimization (EUROPT), Lund, Sweden",
+    date: "26-28th of June, 2024",
   },
   {
-    title: 'Drawing Graphs on Surfaces',
-    authors: 'J. van Haastert, L. Jiménez Naranjo, F. Voronine, D. Cortild and A. Villegas Sanabria',
-    date: 'June 2021',
-    website: 'https://www.doi.org/10.13140/RG.2.2.19312.74243',
+    conference:
+      "Systems, Control and Optimization Colloquium, Groningen, Netherlands",
+    date: "12th of June 2024",
+    website:
+      "https://drive.google.com/file/d/1uCfozOr4NWXBWMfPtW5ac1L2yRQu7rY3/view?usp=share_link",
   },
   {
-    title: 'L\'intelligence artificielle dans les jeux',
-    authors: 'P. Anestakis, D. Cortild, E. Fischer, E. Janusis and D. Olimid',
-    date: 'April 2020',
-    website: 'https://www.doi.org/10.13140/RG.2.2.26023.62889',
-  }
+    conference:
+      "Workshop on Nonsmooth Optimization and Applications (NOPTA), Antwerpen, Belgium",
+    date: "8-12th of April, 2024",
+    website:
+      "https://drive.google.com/file/d/1wdjOGBFTkEL1-PPDJRiJpRAcW5a_7TSz/view?usp=share_link",
+  },
+  {
+    conference:
+      "Optimization at Bernoulli Institute (OBI), Groningen, Netherlands",
+    date: "18-20th of June, 2023",
+    website:
+      "https://drive.google.com/file/d/1F5R8VpfxesHwoBEELgBjeKPqtyvIzR4t/view?usp=share_link",
+  },
 ];
 
 export default () => (
@@ -71,11 +80,79 @@ export default () => (
       className="section section-dark pb-0 px-4"
       id="projects"
       style={{
-        background: 'linear-gradient(#555, #475)',
-        paddingTop: '0',
+        background: "linear-gradient(#555, #475)",
+        paddingTop: "0",
         marginTop: 0,
       }}
     >
+      <Container>
+        <Row>
+          <Col className="ml-auto mr-auto text-center" md="8">
+            <h2 className="title text-white">
+              <b>Preprints</b>
+            </h2>
+            <h5 className="description text-white">
+              <b>
+                More information to be found on my{" "}
+                <a
+                  href="https://arxiv.org/search/math?searchtype=author&query=Cortild,+D"
+                  target={"_blank"}
+                >
+                  ArXiV profile
+                </a>
+                .
+              </b>
+            </h5>
+          </Col>
+        </Row>
+        <div className="space-top" />
+        <Row className="justify-content-center align-center text-center">
+          <ul className="w-100 text-left text-white">
+            {preprints.map(({ title, website, authors, date }) => (
+              <li>
+                <a href={website} target="_blank" className="text-white">
+                  <h5>
+                    <b>
+                      {authors}. <i>{title}</i>, {date}
+                    </b>
+                  </h5>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </Row>
+      </Container>
+      <Container>
+        <Row>
+          <Col className="ml-auto mr-auto text-center" md="8">
+            <h2 className="title text-white">
+              <b>Presentations</b>
+            </h2>
+            <h5 className="description text-white">
+              <b>
+                The already given talks are clickable, and the slides / poster
+                may be downloaded through them.
+              </b>
+            </h5>
+          </Col>
+        </Row>
+        <div className="" />
+        <Row className="justify-content-center align-center text-center">
+          <ul className="w-100 text-left text-white">
+            {conference.map(({ title, conference, website, authors, date }) => (
+              <li>
+                <a href={website} target="_blank" className="text-white">
+                  <h5>
+                    <b>
+                      {conference}. {date}
+                    </b>
+                  </h5>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </Row>
+      </Container>
       <Container>
         <Row>
           <Col className="ml-auto mr-auto text-center" md="8">
@@ -84,80 +161,33 @@ export default () => (
             </h2>
             <h5 className="description text-white">
               <b>
-                More information to be found on my <a href="https://www.researchgate.net/profile/Daniel-Cortild-2"
-                                                      target={"_blank"}>ResearchGate profile</a>.
+                More information to be found on my{" "}
+                <a
+                  href="https://www.researchgate.net/profile/Daniel-Cortild-2"
+                  target={"_blank"}
+                >
+                  ResearchGate profile
+                </a>
+                .
               </b>
             </h5>
           </Col>
         </Row>
-        <div className="space-top"/>
+        <div className="space-top" />
         <Row className="justify-content-center align-center text-center">
           <ul className="w-100 text-left text-white">
-            {projects.map(({title, website, authors, date}) => (
+            {projects.map(({ title, website, authors, date }) => (
               <li>
-                <a href={website} target="_blank" className="text-white"><h5><b>{authors}. <i>{title}</i>, {date}</b>
-                </h5></a>
+                <a href={website} target="_blank" className="text-white">
+                  <h5>
+                    <b>
+                      {authors}. <i>{title}</i>, {date}
+                    </b>
+                  </h5>
+                </a>
               </li>
             ))}
           </ul>
-        </Row>
-      </Container>
-    </div>
-    {/* PAST WEB DEV */}
-    <div
-      className="section section-dark pb-0"
-      id="jobs"
-      style={{
-        background: 'linear-gradient(#475, #77b)',
-        paddingTop: '0',
-        marginTop: 0,
-      }}
-    >
-      <Container>
-        <Row>
-          <Col className="ml-auto mr-auto text-center" md="8">
-            <h2 className="title text-white">
-              <b>Web Development</b>
-            </h2>
-            <h5 className="description text-white">
-              <b>
-                More information to be found on my <a href="https://github.com/DanielCortild"
-                                                      target={"_blank"}>GitHub profile</a>.
-              </b>
-            </h5>
-          </Col>
-        </Row>
-        <div className="space-top"/>
-        <Row className="justify-content-center px-4">
-          {jobs.map(({title, type, description, img, website}) => (
-            <Col lg={4} md={6} sm={12}>
-              <Card className="card-plain">
-                <CardImg top tag="div">
-                  <a href={website} target="_blank">
-                    <img
-                      alt="..."
-                      className="img"
-                      src={require('assets/img/sections/' + img).default}
-                    />
-                  </a>
-                </CardImg>
-                <CardBody>
-                  <a href={website} target="_blank">
-                    <CardTitle tag="h4" className="text-center">
-                      <b>{title}</b>
-                    </CardTitle>
-                    <br/>
-                  </a>
-                  <h6 className="card-category text-white text-center">
-                    {type}
-                  </h6>
-                  <p className="card-description text-white text-center">
-                    <b>{description}</b>
-                  </p>
-                </CardBody>
-              </Card>
-            </Col>
-          ))}
         </Row>
       </Container>
     </div>
