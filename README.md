@@ -1,6 +1,6 @@
 # Personal Portfolio 2023
 
-Welcome to my personal portfolio for 2023, showcasing my projects and skills. This website is built using React and is hosted on [www.cortild.com](http://www.cortild.com). It includes an overview of my work, skills, and projects I have worked on. This repository contains the source code for it.
+Welcome to my personal portfolio (2023 edition), showcasing my projects and skills. This website is built using React and is hosted on [www.cortild.com](http://www.cortild.com). It includes an overview of my work, skills, and projects I have worked on. This repository contains the source code for it.
 
 ## Getting Started
 
