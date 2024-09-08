@@ -2,20 +2,11 @@
 import React from "react";
 
 // reactstrap components
-import {
-  Card,
-  CardBody,
-  CardImg,
-  CardTitle,
-  Col,
-  Container,
-  Row,
-} from "reactstrap";
+import { Card, CardBody, CardImg, CardTitle, Col, Container, Row } from "reactstrap";
 
 const preprints = [
   {
-    title:
-      "Krasnoselskii-Mann Iterations: Inertia, Perturbations and Approximation",
+    title: "Krasnoselskii-Mann Iterations: Inertia, Perturbations and Approximation",
     authors: "D. Cortild, J. Peypouquet",
     date: "January 2024",
     website: "https://arxiv.org/abs/2401.16870",
@@ -37,8 +28,7 @@ const projects = [
   },
   {
     title: "A Brief Review of Automatic Differentiation",
-    authors:
-      "D. Cortild, J. van Haastert, A. Villegas Sanabria and F. Voronine",
+    authors: "D. Cortild, J. van Haastert, A. Villegas Sanabria and F. Voronine",
     date: "March 2023",
     website: "https://www.doi.org/10.13140/RG.2.2.19959.70565",
   },
@@ -46,30 +36,28 @@ const projects = [
 
 const conference = [
   {
-    conference:
-      "21st Conference on Advanced in Continuous Optimization (EUROPT), Lund, Sweden",
+    conference: "Programme Gaspard Monge pour l'Optimisation (PGMO) Days 2024, Paris, France",
+    date: "19-20th of November, 2024",
+  },
+  {
+    conference: "21st Conference on Advanced in Continuous Optimization (EUROPT), Lund, Sweden",
     date: "26-28th of June, 2024",
+    website: "https://drive.google.com/file/d/1X7JRjgBNBiT1r4YqyAgKjWqvTkRNQdE5/view?usp=sharing",
   },
   {
-    conference:
-      "Systems, Control and Optimization Colloquium, Groningen, Netherlands",
+    conference: "Systems, Control and Optimization Colloquium, Groningen, Netherlands",
     date: "12th of June 2024",
-    website:
-      "https://drive.google.com/file/d/1uCfozOr4NWXBWMfPtW5ac1L2yRQu7rY3/view?usp=share_link",
+    website: "https://drive.google.com/file/d/1uCfozOr4NWXBWMfPtW5ac1L2yRQu7rY3/view?usp=share_link",
   },
   {
-    conference:
-      "Workshop on Nonsmooth Optimization and Applications (NOPTA), Antwerpen, Belgium",
+    conference: "Workshop on Nonsmooth Optimization and Applications (NOPTA), Antwerpen, Belgium",
     date: "8-12th of April, 2024",
-    website:
-      "https://drive.google.com/file/d/1wdjOGBFTkEL1-PPDJRiJpRAcW5a_7TSz/view?usp=share_link",
+    website: "https://drive.google.com/file/d/1wdjOGBFTkEL1-PPDJRiJpRAcW5a_7TSz/view?usp=share_link",
   },
   {
-    conference:
-      "Optimization at Bernoulli Institute (OBI), Groningen, Netherlands",
+    conference: "Optimization at Bernoulli Institute (OBI), Groningen, Netherlands",
     date: "18-20th of June, 2023",
-    website:
-      "https://drive.google.com/file/d/1F5R8VpfxesHwoBEELgBjeKPqtyvIzR4t/view?usp=share_link",
+    website: "https://drive.google.com/file/d/1F5R8VpfxesHwoBEELgBjeKPqtyvIzR4t/view?usp=share_link",
   },
 ];
 
@@ -94,10 +82,7 @@ export default () => (
             <h5 className="description text-white">
               <b>
                 More information to be found on my{" "}
-                <a
-                  href="https://arxiv.org/search/math?searchtype=author&query=Cortild,+D"
-                  target={"_blank"}
-                >
+                <a href="https://arxiv.org/search/math?searchtype=author&query=Cortild,+D" target={"_blank"}>
                   ArXiV profile
                 </a>
                 .
@@ -129,10 +114,7 @@ export default () => (
               <b>Presentations</b>
             </h2>
             <h5 className="description text-white">
-              <b>
-                The already given talks are clickable, and the slides / poster
-                may be downloaded through them.
-              </b>
+              <b>The already given talks are clickable, and the slides / poster may be downloaded through them.</b>
             </h5>
           </Col>
         </Row>
@@ -162,10 +144,7 @@ export default () => (
             <h5 className="description text-white">
               <b>
                 More information to be found on my{" "}
-                <a
-                  href="https://www.researchgate.net/profile/Daniel-Cortild-2"
-                  target={"_blank"}
-                >
+                <a href="https://www.researchgate.net/profile/Daniel-Cortild-2" target={"_blank"}>
                   ResearchGate profile
                 </a>
                 .
