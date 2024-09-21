@@ -20,12 +20,12 @@ const projects = [
     date: "November 2023",
     website: "http://dx.doi.org/10.13140/RG.2.2.13232.94723",
   },
-  {
-    title: "Perturbed Inertial Krasnoselskii-Mann Iterations",
-    authors: "D. Cortild",
-    date: "May 2023",
-    website: "http://www.doi.org/10.13140/RG.2.2.15082.49601",
-  },
+  // {
+  //   title: "Perturbed Inertial Krasnoselskii-Mann Iterations",
+  //   authors: "D. Cortild",
+  //   date: "May 2023",
+  //   website: "http://www.doi.org/10.13140/RG.2.2.15082.49601",
+  // },
   {
     title: "A Brief Review of Automatic Differentiation",
     authors: "D. Cortild, J. van Haastert, A. Villegas Sanabria and F. Voronine",
@@ -61,11 +61,26 @@ const conference = [
   },
 ];
 
+const classes = [
+  {
+    classname: "Probabilistic Methods",
+    location: "Maths Beyond Limits 2024",
+    link: "https://drive.google.com/file/d/1qtEdfJ3a73kM6Ez0Z6eZL8V_9sqfaknd/view?usp=sharing",
+    date: "13-15th of September, 2024",
+  },
+  {
+    classname: "Introduction to Convex Optimization",
+    location: "Maths Beyond Limits 2023",
+    link: "https://drive.google.com/file/d/1qsGq6pjRoi3nHCTd572cY1Qb_OQq-MYt/view?usp=sharing",
+    date: "16-18th of September, 2023",
+  },
+];
+
 export default () => (
   <>
     {/*PROJECTS */}
     <div
-      className="section section-dark pb-0 px-4"
+      className="section section-dark pb-5 px-4"
       id="projects"
       style={{
         background: "linear-gradient(#555, #475)",
@@ -111,7 +126,7 @@ export default () => (
         <Row>
           <Col className="ml-auto mr-auto text-center" md="8">
             <h2 className="title text-white">
-              <b>Presentations</b>
+              <b>Conference Appearances</b>
             </h2>
             <h5 className="description text-white">
               <b>The already given talks are clickable, and the slides / poster may be downloaded through them.</b>
@@ -161,6 +176,31 @@ export default () => (
                   <h5>
                     <b>
                       {authors}. <i>{title}</i>, {date}
+                    </b>
+                  </h5>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </Row>
+      </Container>
+      <Container>
+        <Row>
+          <Col className="ml-auto mr-auto text-center" md="8">
+            <h2 className="title text-white">
+              <b>Volunteering Teaching Projects</b>
+            </h2>
+          </Col>
+        </Row>
+        <div className="space-top" />
+        <Row className="justify-content-center align-center text-center">
+          <ul className="w-100 text-left text-white">
+            {classes.map(({ classname, link, location, date }) => (
+              <li>
+                <a href={link} target="_blank" className="text-white">
+                  <h5>
+                    <b>
+                      {classname} (<i>{location}</i>, {date})
                     </b>
                   </h5>
                 </a>
